@@ -162,4 +162,11 @@ int main()
                 mhs.traverse();
             }
             break;
-            
+            case '4':
+            {
+                if (mhs.listEmpaty() == true)
+                {
+                    cout << "\nList kosong\n";
+                    break;
+                }
+                
