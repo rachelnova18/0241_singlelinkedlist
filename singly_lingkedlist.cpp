@@ -92,4 +92,23 @@ public:
         }
     }
 
-    
+    void traverse()
+    {
+        if (listEmpaty())
+        {
+            cout << "\nList Kosong\n";
+        }
+        else
+        {
+            cout << "\nData didalan list adalah: \n";
+            Node *currentNode = START;
+            while (currentNode != NULL)
+            {
+                cout << currentNode->noMhs << endl;
+                currentNode = currentNode->next;
+            }
+            cout << endl;
+        }
+    }
+};
+
