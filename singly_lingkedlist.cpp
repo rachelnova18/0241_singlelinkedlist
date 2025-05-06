@@ -169,4 +169,20 @@ int main()
                     cout << "\nList kosong\n";
                     break;
                 }
-                
+                Node *previous, *current;
+                cout << endl
+                     << "Masukan no mahasiswa yang dicari : ";
+                cin >> nim;
+                if (mhs.search(nim, &previous, &current) == false)
+                    cout << endl
+                         << "Data tidak ditemukan" << endl;
+                else
+                {
+                    cout << endl
+                         << "Data ditemukan" << endl;
+                    cout << "\nNo Mahasiswa : " << current->noMhs << endl;
+                    cout << "\n";
+                }
+            }
+            break;
+            
